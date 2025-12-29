@@ -1,0 +1,167 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #fff;
+  background-color: #111;
+}
+
+/* HERO SECTION */
+.hero-image {
+  background-image: url("images/marlebaby-hero.jpg");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  min-height: 100vh;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.hero-overlay h1 {
+  font-size: 3.5rem;
+  letter-spacing: 4px;
+}
+
+.hero-overlay .subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-top: 10px;
+}
+
+.hero-overlay .tagline {
+  margin-top: 20px;
+  max-width: 600px;
+  font-size: 1.1rem;
+  color: #e0e0e0;
+}
+
+/* Section Styles */
+.section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section.dark {
+  background-color: #1a1a1a;
+}
+
+/* ORIGIN SECTION */
+.origin-bg {
+  background-image: url("images/marlebaby-origin.jpg");
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  position: relative;
+  padding: 80px 20px;
+}
+
+.origin-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.origin-content {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.origin-text {
+  text-align: left;
+}
+
+.origin-text h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.origin-text p {
+  margin-bottom: 15px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.origin-text .math {
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+/* Lists */
+ul.values, ul.movement {
+  list-style: none;
+  margin-top: 20px;
+}
+
+ul.values li, ul.movement li {
+  background: rgba(255, 255, 255, 0.05);
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-left: 5px solid #ffcc00;
+  text-align: left;
+}
+
+/* Music Section */
+.music-embeds {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* Quotes */
+.quote {
+  font-size: 1.3rem;
+  font-style: italic;
+  margin-top: 20px;
+  color: #ffcc00;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #000;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-overlay h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-overlay .tagline {
+    font-size: 1rem;
+  }
+
+  .origin-content {
+    grid-template-columns: 1fr;
+  }
+}
